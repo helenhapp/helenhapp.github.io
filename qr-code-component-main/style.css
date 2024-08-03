@@ -45,7 +45,7 @@ main {
 
 .container {
     width: 80%;
-    max-width: 300px;
+    max-width: 20rem;
     background-color: var(--white);
     border-radius: 20px;
     box-shadow: hsla(216, 15%, 48%, .1) 0 18px 10px;
