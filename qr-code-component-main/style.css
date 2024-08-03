@@ -44,8 +44,7 @@ main {
 }
 
 .container {
-    width: 80%;
-    max-width: 20rem;
+    max-width: 18rem;
     background-color: var(--white);
     border-radius: 20px;
     box-shadow: hsla(216, 15%, 48%, .1) 0 18px 10px;
@@ -57,7 +56,7 @@ main {
 }
 
 .text {
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 0.5rem 1.75rem 1.75rem 1.75rem;
     text-align: center;
 }
 
@@ -69,9 +68,14 @@ main {
     font-weight: var(--fw-bold);
 }
 
-footer {
+.attribution {
     position: absolute;
     bottom: 0;
     text-align: center;
     width: 100%;
+    font-size: 11px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
