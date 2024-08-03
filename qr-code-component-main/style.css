@@ -44,7 +44,7 @@ main {
 }
 
 .container {
-    max-width: 18rem;
+    max-width: 20rem;
     background-color: var(--white);
     border-radius: 20px;
     box-shadow: hsla(216, 15%, 48%, .1) 0 18px 10px;
@@ -61,7 +61,7 @@ main {
 }
 
 .text h1 {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     line-height: 1.3;
     margin-bottom: 10px;
     color: var(--slate-900);
@@ -74,6 +74,7 @@ main {
     text-align: center;
     width: 100%;
     font-size: 11px;
+    height: 2rem;
 }
 
 .attribution a {
