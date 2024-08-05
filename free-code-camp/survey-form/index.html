@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1 id="title">Programming Survey</h1>
+      <p id="description">
+        Thank you for taking your time to answer these questions!
+      </p>
+
+      <form id="survey-form" action="" method="post">
+        <fieldset>
+          <label id="name-label" for="name"
+            >Name: <input id="name" type="text" required placeholder="John Doe"
+          /></label>
+
+          <label id="email-label" for="email"
+            >Email:
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="johndoe@gmail.com"
+          /></label>
+
+          <label id="number-label" for="number"
+            >Age:
+            <input
+              id="number"
+              type="number"
+              min="13"
+              max="100"
+              placeholder="30"
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Are you a programmer? (required)</legend>
+          <label for="programmer"
+            ><input
+              class="inline"
+              id="programmer"
+              name="programming-experience"
+              type="radio"
+              value="yes"
+              checked
+            />
+            Yes</label
+          >
+          <label for="not-programmer"
+            ><input
+              class="inline"
+              id="not-programmer"
+              name="programming-experience"
+              type="radio"
+              value="no"
+            />
+            No</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <label for="dropdown">
+            What is you current role?
+            <select name="role" id="dropdown">
+              <option value="1">(select one)</option>
+              <option value="2">Front-end developer</option>
+              <option value="3">Back-end developer</option>
+              <option value="4">Full-stack developer</option>
+              <option value="5">Systems analyst</option>
+              <option value="6">Mobile app developer</option>
+              <option value="7">Data scientist</option>
+              <option value="8">Other</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Which of this programming languages have you used?</legend>
+          <label for="javascript"
+            ><input
+              class="inline"
+              id="javascript"
+              type="checkbox"
+              value="javascript"
+            />
+            JavaScript</label
+          >
+          <label for="python"
+            ><input class="inline" id="python" type="checkbox" value="python" />
+            Python</label
+          >
+          <label for="java"
+            ><input class="inline" id="java" type="checkbox" value="java" />
+            Java</label
+          >
+          <label for="c-cpp"
+            ><input class="inline" id="c-cpp" type="checkbox" value="c-cpp" /> C
+            and/or C++</label
+          >
+          <label for="swift"
+            ><input class="inline" id="swift" type="checkbox" value="swift" />
+            Swift</label
+          >
+          <label for="kotlin"
+            ><input class="inline" id="kotlin" type="checkbox" value="kotlin" />
+            Kotlin</label
+          >
+          <label for="sch"
+            ><input class="inline" id="csh" type="checkbox" value="csh" />
+            C#</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <label for="plans"
+            >What are your plans on programming for the future?
+            <textarea name="plans" id="plans" rows="5"></textarea>
+          </label>
+        </fieldset>
+
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>

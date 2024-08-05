@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 5rem;
+}
+
+header, main, section, footer, nav {
+    padding: 1rem;
+}
+
+h1, h2, h3, p, ol, li {
+    margin: 1rem 0;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
