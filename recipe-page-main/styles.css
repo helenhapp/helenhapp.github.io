@@ -45,13 +45,12 @@
     padding: 0;
 }
 
-
-/* GENERAL */
-
 img {
     display: block;
     width: 100%;
 }
+
+/* GENERAL */
 
 body {
     line-height: 1.5;
@@ -61,6 +60,16 @@ body {
     color: var(--stone-600);
     background-color: var(--stone-100);
 }
+
+main {
+    background-color: var(--white);
+}
+
+.bold {
+    font-weight: var(--fw-bold);
+}
+
+/* MAIN STYLING */
 
 h1,
 h2 {
@@ -79,72 +88,40 @@ h2 {
     color: var(--brown-800);
 }
 
-h3 {
-    color: var(--rose-800);
-    margin-bottom: 0.5rem;
-}
-
 .prep-time {
     background-color: var(--rose-50);
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 2rem;
 }
 
-.bold {
+.prep-time p {
+    color: var(--rose-800);
+    margin-bottom: 0.7rem;
     font-weight: var(--fw-bold);
+    font-size: 1.1rem;
 }
 
-main {
+.content {
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: var(--white);
 }
 
-.wide-img {
-    display: block;
-}
-
-.narrow-img {
-    display: none;
-}
-
-@media (min-width: 380px) {
+@media (min-width: 400px) {
     main {
-        max-width: 80vw;
+        width: 80%;
+        max-width: 40rem;
         margin: 4rem auto;
         border-radius: 20px;
     }
 
-    .wide-img {
-        display: none;
-    }
-    
-    .narrow-img {
-        display: block;
-        border-radius: 10px;
+    header {
+        padding: 2rem;
     }
 
-    footer {
-        background-color: var(--stone-100);
-    }
-}
-
-@media (min-width: 1000px) {
-    main {
-        max-width: 55vw;
-        margin: 4rem auto;
-        border-radius: 20px;
-    }
-
-    .wide-img {
-        display: none;
-    }
-    
-    .narrow-img {
-        display: block;
+    header img {
         border-radius: 10px;
     }
 }
@@ -153,7 +130,6 @@ main {
     border: none;
     border-bottom: 2px solid var(--stone-150);
 }
-
 
 /* LISTS */
 
@@ -175,7 +151,6 @@ li::marker {
     color: var(--brown-800);
     margin-bottom: 0.5rem;
 }
-
 
 /* TABLE */
 
@@ -200,6 +175,7 @@ td {
     color: var(--brown-800);
 }
 
+/* ATTRIBUTION */
 
 .attribution {
     font-size: 11px;
