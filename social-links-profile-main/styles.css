@@ -94,7 +94,8 @@ body {
     border-radius: 5px;
 }
 
-.links p:hover {
+.links p:hover,
+.links p:focus {
     background-color: var(--green);
     color: var(--grey-800);
 }
