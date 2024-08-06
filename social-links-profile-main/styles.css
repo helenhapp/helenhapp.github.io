@@ -5,11 +5,11 @@
 
 :root {
     /* colors */
-    --green: hsl(75, 94%, 57%);
-    --white: hsl(0, 0%, 100%);
-    --grey-700: hsl(0, 0%, 20%);
-    --grey-800: hsl(0, 0%, 12%);
-    --grey-900: hsl(0, 0%, 8%);
+    --accent-clr: hsl(75, 94%, 57%);
+    --main-text-clr: hsl(0, 0%, 100%);
+    --bg-clr-700: hsl(0, 0%, 20%);
+    --bg-clr-800: hsl(0, 0%, 12%);
+    --bg-clr-900: hsl(0, 0%, 8%);
 
     /* font */
     --ff-main: 'Inter', sans-serif;
@@ -39,15 +39,15 @@ body {
     padding: 1rem;
     font-family: var(--ff-main);
     font-size: var(--fs-main);
-    color: var(--white);
-    background-color: var(--grey-900);
+    color: var(--main-text-clr);
+    background-color: var(--bg-clr-900);
     font-weight: var(--fw-normal);
 }
 
 .card {
     max-width: 25rem;
     min-width: 23vw;
-    background-color: var(--grey-800);
+    background-color: var(--bg-clr-800);
     padding: 2.5rem;
     border-radius: 12px;
     text-align: center;
@@ -68,7 +68,7 @@ body {
 }
 
 .location {
-    color: var(--green);
+    color: var(--accent-clr);
 }
 
 .extra-info {
@@ -84,21 +84,19 @@ body {
 }
 
 .links a {
+    display: block;
     text-decoration: none;
-}
-
-.links p {
     text-align: center;
-    background-color: var(--grey-700);
-    color: var(--white);
+    background-color: var(--bg-clr-700);
+    color: var(--main-text-clr);
     padding: 0.75rem 0;
     border-radius: 6px;
 }
 
-.links p:hover,
-.links p:focus {
-    background-color: var(--green);
-    color: var(--grey-800);
+.links a:hover,
+.links a:focus {
+    background-color: var(--accent-clr);
+    color: var(--bg-clr-800);
 }
 
 footer {
@@ -111,5 +109,5 @@ footer {
 
 footer a,
 footer a:visited {
-    color: var(--green);
+    color: var(--accent-clr);
 }
