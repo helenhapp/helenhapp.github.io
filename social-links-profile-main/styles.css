@@ -48,7 +48,7 @@ body {
     max-width: 25rem;
     background-color: var(--grey-800);
     padding: 2.5rem;
-    border-radius: 10px;
+    border-radius: 12px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -91,7 +91,7 @@ body {
     background-color: var(--grey-700);
     color: var(--white);
     padding: 0.5rem 0;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .links p:hover,
