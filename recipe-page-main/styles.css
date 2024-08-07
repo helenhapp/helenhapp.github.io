@@ -183,6 +183,11 @@ tr:last-of-type {
     padding-bottom: 0;
 }
 
+th,
+td {
+    padding-left: 1rem;
+}
+
 th {
     text-align: start;
     font-weight: normal;
@@ -202,6 +207,8 @@ td {
     height: 1rem;
   }
   
-.attribution a {
+.attribution a,
+.attribution a:visited {
     color: var(--rose-800);
+    font-weight: var(--fw-bold);
 }
