@@ -125,6 +125,7 @@ h2 {
 
     header {
         padding: 2.3rem;
+        padding-bottom: 0;
     }
 
     header img {
