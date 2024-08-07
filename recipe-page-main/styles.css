@@ -82,7 +82,7 @@ h2 {
 
 h1 {
     color: var(--stone-900);
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 h2 {
@@ -130,6 +130,10 @@ h2 {
     header img {
         border-radius: 12px;
     }
+
+    h1 {
+        font-size: 2.4rem;
+    }
 }
 
 .divider {
@@ -165,6 +169,7 @@ li::marker {
 table {
     width: 100%;
     border: none;
+    margin-top: 1em;
 }
 
 tr {
