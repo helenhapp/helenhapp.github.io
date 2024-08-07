@@ -179,6 +179,10 @@ tr {
     padding: 0.5rem;
 }
 
+tr:last-of-type {
+    padding-bottom: 0;
+}
+
 th {
     text-align: start;
     font-weight: normal;
