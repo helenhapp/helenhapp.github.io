@@ -112,7 +112,7 @@ h2 {
 @media (min-width: 450px) {
     main {
         width: 80%;
-        max-width: 40rem;
+        max-width: 45rem;
         margin: 4rem auto;
         border-radius: 20px;
     }
@@ -180,6 +180,7 @@ td {
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-bottom: 1rem;
   }
   
 .attribution a {
