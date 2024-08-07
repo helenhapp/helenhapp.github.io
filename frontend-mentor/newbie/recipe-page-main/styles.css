@@ -74,7 +74,6 @@ main {
 h1,
 h2 {
     font-family: var(--ff-accent);
-    /* font-weight: var(--fw-boldest); */
     font-weight: var(--fw-normal);
     letter-spacing: 1px;
     margin-bottom: 1rem;
@@ -146,7 +145,7 @@ h2 {
 
 ul, 
 ol {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 }
 
 li {
