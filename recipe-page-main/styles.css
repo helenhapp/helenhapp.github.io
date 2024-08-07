@@ -160,7 +160,7 @@ li:last-of-type {
 
 li::marker {
     color: var(--brown-800);
-    font-weight: var(--fw-normal);
+    font-weight: var(--fw-boldest);
     font-size: 0.8rem;
     vertical-align: middle;
 }
