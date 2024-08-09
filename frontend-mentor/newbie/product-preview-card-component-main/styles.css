@@ -39,7 +39,7 @@ body {
     font-size: var(--fs-primary);
     font-weight: var(--fw-normal);
     color: var(--dark-grayish-blue);
-    line-height: 1.7;
+    line-height: 1.6;
     background-color: var(--cream);
 }
 
@@ -66,8 +66,8 @@ main {
 
 .category {
     text-transform: uppercase;
-    letter-spacing: 6px;
-    font-size: 0.75rem;
+    letter-spacing: 5px;
+    font-size: 0.7rem;
     line-height: 1;
 }
 
@@ -80,7 +80,7 @@ h1 {
 }
 
 .text {
-    padding: 1.7rem 2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -92,7 +92,7 @@ h1 {
 .prices {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.2rem;
 }
 
 .new-price {
