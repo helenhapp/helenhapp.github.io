@@ -32,6 +32,13 @@ img {
     width: 100%;
 }
 
+input, 
+button, 
+textarea, 
+select {
+    font: inherit;
+}
+
 /* main styling */
 
 body {
@@ -48,6 +55,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 .card {
@@ -103,14 +120,13 @@ h1 {
 }
 
 .old-price {
-    text-decoration: line-through;
     font-size: 0.85rem;
 }
 
 /* button */
 
 button {
-    padding: 1.1em;
+    padding: .9rem;
     border: 0;
     border-radius: 8px;
     background-color: var(--dark-cyan);
