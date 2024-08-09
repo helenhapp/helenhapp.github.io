@@ -43,6 +43,8 @@ body {
 
 h1, h2 {
     color: hsl(var(--very-dark-blue));
+    line-height: 1.4;
+    font-weight: var(--fw-semibold);
 }
 
 .intro-text {
@@ -66,7 +68,7 @@ h1, h2 {
     min-height: 15rem;
     margin: 1.5rem auto;
     background-color: white;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 5px;
     border-top: 4px solid black;
     box-shadow: 0 10px 10px hsla(var(--grayish-blue), 0.3);
@@ -132,9 +134,5 @@ h1, h2 {
     .intro-text {
         width: 50%;
         margin: 0 auto 2rem auto;
-    }
-
-    .intro-text h1 {
-        line-height: 1.4;
     }
 }
