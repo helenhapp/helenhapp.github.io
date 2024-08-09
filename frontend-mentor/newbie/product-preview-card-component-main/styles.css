@@ -1,12 +1,10 @@
 :root {
     /* Colors */
-
-    /* Primary */
+    /* primary */
     --dark-cyan: hsl(158, 36%, 37%);
     --very-dark-cyan: hsl(158, 32%, 17%);
     --cream: hsl(30, 38%, 92%);
-
-    /* Neutral */
+    /* neutral */
     --very-dark-blue: hsl(212, 21%, 14%);
     --dark-grayish-blue: hsl(228, 12%, 48%);
     --white: hsl(0, 0%, 100%);
@@ -18,8 +16,10 @@
     --fw-normal: 500;
     --fw-bold: 700;
 
-    --border-radius: 8px;
+    --border-radius: 9px;
 }
+
+/* reset */
 
 * {
     box-sizing: border-box;
@@ -32,12 +32,14 @@ img {
     width: 100%;
 }
 
+/* main styling */
+
 body {
     font-family: var(--ff-primary);
     font-size: var(--fs-primary);
     font-weight: var(--fw-normal);
     color: var(--dark-grayish-blue);
-    line-height: 1.6;
+    line-height: 1.7;
     background-color: var(--cream);
 }
 
@@ -54,14 +56,19 @@ main {
     border-radius: var(--border-radius);
 }
 
+/* image */
+
 .perfume-img {
     border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
+/* text */
+
 .category {
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     font-size: 0.75rem;
+    line-height: 1;
 }
 
 h1 {
@@ -80,6 +87,8 @@ h1 {
     gap: 1rem;
 }
 
+/* prices */
+
 .prices {
     display: flex;
     align-items: center;
@@ -95,20 +104,23 @@ h1 {
 
 .old-price {
     text-decoration: line-through;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
+/* button */
+
 button {
-    padding: 1.2em;
+    padding: 1.1em;
     border: 0;
-    border-radius: 6px;
+    border-radius: 8px;
     background-color: var(--dark-cyan);
     color: var(--white);
     font-weight: var(--fw-bold);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.7rem;
+    letter-spacing: 1px;
 }
 
 button:hover,
@@ -117,11 +129,12 @@ button:focus {
     background-color: var(--very-dark-cyan);
 }
 
+/* footer */
+
 .attribution {
     font-size: 11px;
     text-align: center;
     width: 100%;
-
     position: absolute;
     bottom: 0;
     height: 1.5rem;
@@ -131,6 +144,8 @@ button:focus {
 .attribution a:visited {
     color: var(--dark-cyan);
 }
+
+/* media queries */
 
 @media (min-width: 30em) and (max-width: 44em) {
     .card {
