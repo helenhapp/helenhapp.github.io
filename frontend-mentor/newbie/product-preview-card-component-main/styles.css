@@ -146,6 +146,6 @@ button:focus {
     }
 
     .perfume-img {
-        border-radius: var(--border-radius) 0 0 var(--border-radius)
+        border-radius: var(--border-radius) 0 0 var(--border-radius);
     }
 }
