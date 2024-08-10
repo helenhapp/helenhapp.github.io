@@ -71,19 +71,22 @@ body {
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
     font-size: var(--fs-primary);
-    padding: 4rem 1rem 1rem 1rem;
+    padding: 4rem 0;
     font-family: var(--ff-primary);
     font-weight: var(--fw-normal);
     background-color: var(--Light-grayish-blue);
-    letter-spacing: .04em;
-}
+    letter-spacing: .02em;
 
-main {
-    width: 90%;
-    margin: 0 auto;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .cards {
+    width: 85%;
+    max-width: 73rem;
     display: grid;
     gap: 1.7rem;
 }
@@ -93,7 +96,7 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 1em;
-    padding: 1.5rem;
+    padding: 1.6rem;
     border-radius: 7px;
 }
 
@@ -109,12 +112,13 @@ main {
 }
 
 .card img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.3rem;
+    height: 2.3rem;
     object-fit: cover;
     border-radius: 100%;
 }
-.card .name {
+
+.name {
     display: block;
 }
 
@@ -130,19 +134,22 @@ main {
     background-color: var(--Very-dark-grayish-blue);
 }
 
-@media (min-width: 70rem) {
+@media (min-width: 40rem) {
     body {
-        padding: 3rem 5rem 0 5rem;
+        padding: 2rem 0;
     }
 
     .cards {
         grid-template-areas: 
-            "c_one c_one c_two c_five"
-            "c_three c_four c_four c_five";
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+            "c_one c_one"
+            "c_five c_two"
+            "c_five c_three"
+            "c_four c_four";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
 
+    
     .one {
         grid-area: c_one;
     }
@@ -164,10 +171,25 @@ main {
     }
 }
 
+@media (min-width: 68rem) {
+    .cards {
+        grid-template-areas: 
+            "c_one c_one c_two c_five"
+            "c_three c_four c_four c_five";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        height: 2rem;
+    }
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
-    padding: 1rem;
     margin-top: 1rem;
 }
 
