@@ -87,7 +87,7 @@ body {
 .cards {
     width: 85%;
     max-width: 71rem;
-    display: grid;
+    display: flex;
     gap: 1.7rem;
 }
 
