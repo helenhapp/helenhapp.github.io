@@ -140,6 +140,7 @@ body {
     }
 
     .cards {
+        display: grid;
         grid-template-areas: 
             "c_one c_one"
             "c_five c_two"
