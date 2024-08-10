@@ -86,7 +86,7 @@ body {
 
 .cards {
     width: 85%;
-    max-width: 73rem;
+    max-width: 71rem;
     display: grid;
     gap: 1.7rem;
 }
@@ -101,7 +101,7 @@ body {
 }
 
 .light-card {
-    color: var(--Very-dark-blackish-blue);
+    color: var(--Very-dark-grayish-blue);
     background-color: var(--White);
     box-shadow: 5px 5px 20px var(--Light-gray);
 }
