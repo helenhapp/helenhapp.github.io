@@ -17,7 +17,7 @@
 
     /* other */
     --gap: 1rem;
-    --border-radius: 10px;
+    --border-radius: 5px;
 }
 
 * {
@@ -39,6 +39,12 @@ body {
     color: hsl(var(--grayish-blue));
     padding: 4rem 2rem 3rem 2rem;
     line-height: 1.7;
+
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1, h2 {
@@ -58,7 +64,7 @@ h2 {
 
 .intro-text h1 {
     margin-bottom: 1rem;
-    font-size: clamp(1rem, 1.2rem + 1vw, 2rem);
+    font-size: clamp(1rem, 1.1rem + 2vw, 2rem);
 }
 
 .intro-text h1 span {
@@ -73,13 +79,13 @@ h2 {
     margin: 1.5rem auto;
     background-color: white;
     padding: 2rem;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     border-top: 4px solid black;
-    box-shadow: 0 10px 10px hsla(var(--grayish-blue), 0.3);
+    box-shadow: 0 12px 12px hsla(var(--grayish-blue), 0.3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1em;
+    gap: var(--gap);
 }
 
 .one {
@@ -116,7 +122,7 @@ h2 {
     color: hsl(var(--very-dark-blue));
 }
 
-@media (min-width: 750px) {
+@media (min-width: 780px) {
     .cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -136,7 +142,7 @@ h2 {
     }
 
     .intro-text {
-        width: 50%;
+        width: 60%;
         margin: 0 auto 2rem auto;
     }
 }
