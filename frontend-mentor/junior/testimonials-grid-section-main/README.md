@@ -31,7 +31,9 @@ Users should be able to:
 
 - Tablet:
 
-![](images/screenshot-tablet.png)
+<!-- ![](images/screenshot-tablet.png) -->
+
+<img src="images/screenshot-tablet.png" width="200>
 
 - Mobile:
 
