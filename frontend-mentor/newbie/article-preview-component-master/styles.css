@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -9,10 +9,16 @@ img {
     width: 100%;
 }
 
-#tooltip img, button img, .avatar {
+button img {
     display: inline;
     width: 1.5rem;
     height: 1.5rem;
+}
+
+.avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
 }
 
 body {
@@ -20,7 +26,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lavenderblush;
+    background-color: lightblue;
     font-size: 15px;
     line-height: 1.5;
 }
@@ -31,8 +37,8 @@ h1 {
 }
 
 main {
-    background-color: lightcoral;
-    color: white;
+    background-color: white;
+    color: darkblue;
     margin: 1rem;
     border-radius: .5rem;
 
@@ -62,10 +68,6 @@ main {
     align-items: center;
 }
 
-.hidden {
-    display: none;
-}
-
 @media (min-width: 45rem) {
     main {
         display: grid;
@@ -76,4 +78,56 @@ main {
     .header-img {
         border-radius: .5rem 0 0 .5rem;
     }
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0;
+    background-color: gray;
+}
+  
+.tooltip .tooltip-text {
+    display: none;
+
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: .5rem;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -75px;
+    margin-bottom: 1em;
+    position: absolute;
+    z-index: 1;
+
+    /* height: 3rem; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    gap: .5rem;
+}
+
+.tooltip img {
+    filter: brightness(0) invert(1);
+    padding: .1rem;
+}
+ 
+.tooltip .tooltip-text::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
 }
