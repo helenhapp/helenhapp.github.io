@@ -1,10 +1,10 @@
 :root {
     /* colors */
-    --heading-color: hsl(217, 19%, 35%);
-    --text-color: 212, 23%, 69%;
-    --primary-bg-color: hsl(210, 46%, 95%);
-    --article-bg-color: hsl(0, 100%, 100%);
-    --btn-bg-color: hsl(214, 17%, 51%);
+    --clr-neutral-100: hsl(0, 100%, 100%);
+    --clr-neutral-200: hsl(210, 46%, 95%);
+    --clr-neutral-400: hsl(212, 23%, 69%);
+    --clr-neutral-600: hsl(214, 17%, 51%);
+    --clr-neutral-700: hsl(217, 19%, 35%);
     
 
     /* fonts */
@@ -30,31 +30,33 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-primary);
     font-weight: var(--fw-normal);
-    background-color: var(--primary-bg-color);
-    color: var(--btn-bg-color);
-    line-height: 1.7;
+    background-color: var(--clr-neutral-200);
+    color: var(--clr-neutral-600);
+    line-height: 1.6;
+
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .article-preview {
     width: 85%;
-    max-width: 50rem;
-    background-color: var(--article-bg-color);
-    border-radius: var(--border-radius);
+    max-width: 52rem;
     margin: 0 auto;
+
+    background-color: var(--clr-neutral-100);
+    border-radius: var(--border-radius);
+    box-shadow: 10px 10px 20px hsla(var(--clr-neutral-400), .3);
+    
     display: grid;
     grid-template-rows: auto 1fr;
-    box-shadow: 10px 10px 20px hsla(var(--text-color), .3);
 }
 
 .article-preview section {
-    padding: 1rem 2rem 1rem 2rem;
-    margin-top: 1rem;
+    padding: 2rem;
+    padding-bottom: 1rem;
 }
 
 /* image (header) */
@@ -64,14 +66,14 @@ article header {
 }
 
 header img {
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: left;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
-figure img, .share-btn {
+figure img {
     width: 2.3rem;
     height: 2.3rem;
     border-radius: 50%;
@@ -80,11 +82,11 @@ figure img, .share-btn {
 /* text content */
 
 h1 {
-    margin-bottom: .5rem;
-    color: var(--heading-color);
-    font-size: 1rem;
     line-height: 1.5;
+    font-size: 1rem;
     font-weight: var(--fw-bold);
+    margin-bottom: .5rem;
+    color: var(--clr-neutral-700);
 }
 
 /* article footer */
@@ -93,8 +95,12 @@ article footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     position: relative;
     padding: 1rem 2rem;
+
+    --padding-side: 2rem;
+    --btn-side: 2.2rem;
 }
 
     /* author */
@@ -107,9 +113,9 @@ article footer {
 }
 
 .name {
-    color: var(--heading-color);
-    font-weight: var(--fw-bold);
     line-height: 1.5;
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-700);
 }
 
 time {
@@ -123,20 +129,23 @@ time {
     left: 0;
     bottom: 0;
     top: 0;
+
     display: flex;
     align-items: center;
-    padding-left: 2rem;
-    width: 100%;
+
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 0.5s, opacity 0.5s ease-in-out; 
-    background-color: var(--heading-color);
-    color: var(--article-bg-color);
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
-    text-transform: uppercase;
-    letter-spacing: 4px;
+
+    width: 100%;
+    padding-left: var(--padding-side);
     font-size: .7rem;
     font-weight: lighter;
+    background-color: var(--clr-neutral-700);
+    color: var(--clr-neutral-100);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 .show {
@@ -146,11 +155,12 @@ time {
 }
 
 ul {
+    padding-left: 1rem;
     list-style: none;
+
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding-left: 1rem;
 }
 
 .share-links a img:hover {
@@ -160,26 +170,26 @@ ul {
     /* button */
 
 .share-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
-    background-color: var(--primary-bg-color);
+    width: var(--btn-side);
+    height: var(--btn-side);
+    border-radius: 50%;
+    background-color: var(--clr-neutral-200);
     border: 0;
     z-index: 100;
 }
 
 .share-btn:hover, .share-btn:focus {
-    background-color: var(--btn-bg-color);
+    background-color: var(--clr-neutral-600);
 }
 
 .share-btn img {
     width: 100%;
-    height: auto;
-    padding: .125rem;
+    height: 100%;
+    object-fit: scale-down;
 }
 
-.share-btn:hover img, .share-btn:active img, .share-btn:focus img {
+.share-btn:hover img, .share-btn:focus img {
     filter: brightness(100);
 }
 
