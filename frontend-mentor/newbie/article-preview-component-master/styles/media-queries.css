@@ -1,0 +1,47 @@
+@media (min-width: 40rem) {
+    .article-preview {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: auto;
+    }
+
+    article header {
+      height: 100%;
+    }
+
+    header img {
+        border-radius: var(--border-radius) 0 0 var(--border-radius);
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    .share-links {
+        bottom: 100%;
+        top: auto;
+        right: 0;
+        transform: translateX(calc(50% - 3rem));
+        left: auto;
+        padding: .75rem 1.5rem;
+        width: auto;
+        border-radius: .4rem;
+        margin-bottom: .5rem;
+    }
+
+    .share-links::after {
+        content: " ";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -10px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: var(--heading-color) transparent transparent transparent;
+    }
+
+    h1 {
+      letter-spacing: 0.02rem;
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+}

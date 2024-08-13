@@ -1,9 +1,6 @@
-function myFunction() {
-    const x = document.getElementById("tooltip-text");
-    
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-}
+const btn = document.querySelector(".share-btn");
+const links = document.querySelector(".share-links");
+
+btn.addEventListener("click", () => {
+    links.classList.toggle("show");
+});
