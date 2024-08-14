@@ -137,7 +137,7 @@ time {
     opacity: 0;
     transition: visibility 0s 0.5s, opacity 0.5s ease-in-out; 
 
-    width: 100%;
+    /* width: 100%; */
     padding-left: var(--padding-side);
     font-size: .7rem;
     font-weight: lighter;
@@ -182,7 +182,7 @@ ul {
     border-radius: 50%;
     background-color: hsl(var(--clr-neutral-200));
     border: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .share-btn:hover, .share-btn:focus {
