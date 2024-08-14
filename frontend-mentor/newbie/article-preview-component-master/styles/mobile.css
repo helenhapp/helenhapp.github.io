@@ -160,12 +160,6 @@ time {
     border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .share-links {
-      transition: none;
-    }
-}
-
 .show {
     visibility: visible;
     opacity: 1;
