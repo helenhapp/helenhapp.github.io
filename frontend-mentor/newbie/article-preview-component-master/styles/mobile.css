@@ -24,6 +24,18 @@
     align-items: center;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* main styles */
 
 body {
@@ -81,7 +93,7 @@ figure img {
 
 /* text content */
 
-h1 {
+h2 {
     line-height: 1.5;
     font-size: 1rem;
     font-weight: var(--fw-bold);
