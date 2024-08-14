@@ -1,0 +1,20 @@
+body, .share-btn {
+    background-color: #F8D082;
+}
+
+.article-preview {
+    /* box-shadow: 10px 10px 10px red; */
+    border: 2px solid #640D6B;
+}
+
+.share-btn:hover {
+    background-color: #E65C19;
+}
+
+.share-links {
+    background-color: #640D6B;
+}
+
+.share-links::after {
+    border-color: #640D6B transparent transparent transparent;
+}
