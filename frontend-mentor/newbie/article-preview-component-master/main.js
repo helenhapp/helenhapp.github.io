@@ -9,7 +9,7 @@
 // Make it work well when there are multiple article preview components on the page:
 
 // Add event listener to all buttons with the class 'share-btn'
-document.querySelectorAll(".share-btn").forEach(btn => {
+document.querySelectorAll(".share").forEach(btn => {
     btn.addEventListener("click", (event) => {
         // Find the closest parent container, which should contain both the button and the links
         const parentContainer = event.currentTarget.closest('.article-preview');

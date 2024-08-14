@@ -181,31 +181,31 @@ ul {
 
     /* button */
 
-.share-btn {
+.share {
     cursor: pointer;
     width: var(--btn-side);
     height: var(--btn-side);
     border-radius: 50%;
     background-color: hsl(var(--clr-neutral-200));
     border: 0;
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 
-.share-btn:hover, .share-btn:focus {
+.share:hover, .share:focus {
     background-color: hsl(var(--clr-neutral-600));
 }
 
-.share-btn img {
+.share img {
     width: 100%;
     height: 100%;
     object-fit: scale-down;
 }
 
-.share-btn:hover img, .share-btn:focus img {
+.share:hover img, .share:focus img {
     filter: brightness(100);
 }
 
-.share-btn:active {
+.share:active {
     transform: scale(0.9);
 }
 
