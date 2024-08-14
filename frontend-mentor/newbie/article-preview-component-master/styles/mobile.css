@@ -188,7 +188,7 @@ ul {
     border-radius: 50%;
     background-color: hsl(var(--clr-neutral-200));
     border: 0;
-    /* z-index: 1000; */
+    z-index: 10;
 }
 
 .share:hover, .share:focus {
